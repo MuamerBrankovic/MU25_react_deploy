@@ -25,6 +25,8 @@ jobs:
 
       - name: Bygg projektet
         run: npm run build
+        env:
+          VITE_BASE_URL: /MU25_react_deploy/
 
       - name: Ladda upp dist
         uses: actions/upload-pages-artifact@v5
